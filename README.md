@@ -8,7 +8,7 @@ The system distributes customers across checkout counters based on the total num
 ## 📁 Repository Structure
 
 ```
-assignment/
+client/
 ├── public/
 ├── src/
 │   ├── components/

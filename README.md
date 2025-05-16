@@ -70,7 +70,6 @@ queue.customers.reduce((acc, customer) => acc + customer.items, 0);
 ## 📌 Assumptions
 
 - Fixed number of counters (e.g., 3).  
-- Each customer carries between 1 to 30 items.  
 - Only the **first customer** in each queue can be removed manually.  
 - No backend or persistent storage (no Redis/localStorage).  
 - No auto-removal of customers/items after timeout; removal is manual only.

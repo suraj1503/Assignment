@@ -1,11 +1,11 @@
-# 🛒 Hypermart Checkout System
+# Hypermart Checkout System
 
 A responsive queue management simulation built using **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.  
 The system distributes customers across checkout counters based on the total number of items each counter is currently handling.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 client/
@@ -31,17 +31,17 @@ client/
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📥 Add a customer with a selected number of items (1–30)  
-- 🧠 Smart allocation to the **least-loaded** checkout counter  
-- ✅ Only the **first customer** in a counter can be removed  
-- 💫 Smooth animations using **Framer Motion**  
-- 📱 Fully responsive UI with **Tailwind CSS**
+- Add a customer with a selected number of items (1–30)  
+- Smart allocation to the **least-loaded** checkout counter  
+- Only the **first customer** in a counter can be removed  
+- Smooth animations using **Framer Motion**  
+- Fully responsive UI with **Tailwind CSS**
 
 ---
 
-## ⏱️ Time Complexity
+## Time Complexity
 
 ### 1. `findNextCheckout(checkouts: CheckoutQueue[])`
 
@@ -51,7 +51,7 @@ Selects the checkout counter with the minimum total items.
 const index = findNextCheckout(checkouts);
 ```
 
-- ✅ **Time Complexity:** `O(n)`  
+-  **Time Complexity:** `O(n)`  
   _Where `n` = number of checkout counters (usually small and fixed)._
 
 ### 2. Calculating total items per counter:
@@ -60,14 +60,14 @@ const index = findNextCheckout(checkouts);
 queue.customers.reduce((acc, customer) => acc + customer.items, 0);
 ```
 
-- ✅ **Time Complexity:** `O(m)`  
+-  **Time Complexity:** `O(m)`  
   _Where `m` = number of customers in the counter._
 
 **Overall insertion complexity:** `O(n * m)` — efficient for typical small-scale use.
 
 ---
 
-## 📌 Assumptions
+## Assumptions
 
 - Fixed number of counters (e.g., 3).  
 - Only the **first customer** in each queue can be removed manually.  
@@ -76,7 +76,7 @@ queue.customers.reduce((acc, customer) => acc + customer.items, 0);
 
 ---
 
-## 🛠️ Installation & Running Locally
+## Installation & Running Locally
 
 1. Clone the repository:
 
